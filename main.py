@@ -599,6 +599,6 @@ def text_subscribe(message):
 ############################################################################## 
 @bot.message_handler(commands=['fall'])
 def fall(message):
-    print(fall)
+    print(кот)
 ##############################################################################
 bot.polling(none_stop=True)
