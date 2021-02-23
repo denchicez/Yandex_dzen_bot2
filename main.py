@@ -596,5 +596,9 @@ def text_help(message):
 @bot.message_handler(commands=['subscribe'])
 def text_subscribe(message):
     bot.send_message(message.from_user.id, f'Напишите {manager} , чтобы оформить подписку на бота')
+############################################################################## 
+@bot.message_handler(commands=['fall'])
+def fall(message):
+    print(fall)
 ##############################################################################
 bot.polling(none_stop=True)
