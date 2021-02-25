@@ -253,9 +253,9 @@ async def send_welcome(message):
          now = datetime.datetime.now()
          date_today = str(now.year)+'.'+str(now.month)+'.'+str(now.day) 
          date_register.append(date_today)
-         status_sub.insert(index_user,0)
+         status_sub.insert(index_user,2)
          using_persons.insert(index_user,0)
-         time_status.insert(index_user,-1)
+         time_status.insert(index_user,95)
          last_channels_status.insert(index_user,list())
          perons_channels.insert(index_user,list()) 
          last_states_status.insert(index_user,list()) 
@@ -651,8 +651,8 @@ while True:
             for i in time_status:
                 f.write(str(i)+'\n')
         with open('last_channels_status.txt', 'w') as f:
-            last_states_url = f.write(str(last_channels_status))
+            f.write(str(last_channels_status))
         with open('last_states_url.txt', 'w') as f:
-            last_states_url = f.write(str(last_states_url))
+            f.write(str(last_states_url))
         with open('last_states_status.txt', 'w') as f:
-            last_states_status = f.write(str(last_states_url))
+            f.write(str(last_states_url))
